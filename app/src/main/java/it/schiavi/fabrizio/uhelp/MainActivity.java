@@ -71,10 +71,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void setNewLocation(Location location){
-
         lat = location.getLatitude();
         lon = location.getLongitude();
-
     }
 
     private void showMessage(String message) {
