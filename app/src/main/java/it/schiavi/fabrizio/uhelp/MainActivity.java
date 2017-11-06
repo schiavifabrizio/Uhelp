@@ -11,12 +11,13 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements LocationListener {
 
     private TextView mTextMessage;
     private double lat;
@@ -52,10 +53,15 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
+
+
+
         LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+        if ( ActivityCompat.checkSelfPermission(this,
+                Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
                 Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            Log.e("PERMISSION", "NON dati");
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
             // here to request the missing permissions, and then overriding
@@ -81,11 +87,10 @@ public class MainActivity extends AppCompatActivity {
         t.show();
     }
 
-
-
-    // IMPLEMENTAZIONE METODI DELL'INTERFACCIA: LOVCATION MANAGER
+    // IMPLEMENTAZIONE METODI DELL'INTERFACCIA: LOCATION MANAGER
     @Override
     public void onLocationChanged(Location location) {
+
         setNewLocation(location);
     }
 
@@ -106,5 +111,4 @@ public class MainActivity extends AppCompatActivity {
         showMessage("Ricevitore GPS Disabilitato \nAbilitare nella sezione localizzazione.");
 
     }
-
 }
