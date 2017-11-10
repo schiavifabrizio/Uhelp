@@ -5,6 +5,7 @@
     <color name="colorAccent">#FF4081</color>
 
     <!-- Colori personalizzati -->
-    <color name="sfondo">#c0c0c0</color>
+    <color name="sfondo">#36b5c0</color>
+    <color name="splashSfondo">#36b5c0</color>
 
 </resources>
