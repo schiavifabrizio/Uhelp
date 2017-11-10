@@ -2,7 +2,7 @@
     <string name="app_name">Uhelp</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_profilo">Profilo</string>
+    <string name="title_notifiche">Notifiche</string>
     <string name="u_help">U Help</string>
 </resources>
