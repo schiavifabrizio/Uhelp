@@ -3,6 +3,9 @@
     <color name="colorPrimary">#36B5C0</color>
     <color name="colorPrimaryDark">#2C959E</color>
     <color name="colorAccent">#EEFF41</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
 
     <!-- Colori personalizzati -->
     <color name="sfondo">#36b5c0</color>
