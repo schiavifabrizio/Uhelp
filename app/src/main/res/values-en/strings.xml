@@ -8,6 +8,12 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
-    <string name="reg">Sign up</string>
     <string name="pswd">Forgot password?</string>
+    <string name="nome">Name</string>
+    <string name="logo">Logo</string>
+    <string name="cognome">Surname</string>
+    <string name="ntel">Phone number</string>
+    <string name="username">Username</string>
+    <string name="iscriviti">Sign up</string>
+    <string name="accedi">Log in</string>
 </resources>
