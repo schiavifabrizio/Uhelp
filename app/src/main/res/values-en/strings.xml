@@ -18,4 +18,6 @@
     <string name="accedi">Log in</string>
     <string name="title_help">Help</string>
     <string name="title_contatti">Contacts</string>
+    <string name="invia">Send</string>
+    <string name="scordata">Did you forgot your password? Enter your email address we will send you a message to change it.</string>
 </resources>
