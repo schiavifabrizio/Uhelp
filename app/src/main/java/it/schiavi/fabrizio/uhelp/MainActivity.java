@@ -32,11 +32,14 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                 case R.id.navigation_home:
                     mTextMessage.setText(R.string.title_home);
                     return true;
-                case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_profilo);
+                case R.id.navigation_help:
+                    mTextMessage.setText(R.string.title_help);
                     return true;
-                case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifiche);
+                case R.id.navigation_contacts:
+                    mTextMessage.setText(R.string.title_contatti);
+                    return true;
+                case R.id.navigation_profile:
+                    mTextMessage.setText(R.string.title_profilo);
                     return true;
             }
             return false;
