@@ -19,6 +19,7 @@
     <string name="accedi">Accedi</string>
     <string name="invia">Invia</string>
     <string name="uhelp">uHelp</string>
+    <string name="attiva">Attiva uHelp</string>
     <string name="scordata">Hai dimenticato la password? Inserisci il tuo indirizzo email e ti invieremo un messaggio per il ripristino.</string>
 
 </resources>
