@@ -1,4 +1,4 @@
-package it.schiavi.fabrizio.uhelp;
+package it.schiavi.fabrizio.uhelp.utils;
 
 /**
  * Created by Fabrizio on 03/11/2017.

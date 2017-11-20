@@ -10,19 +10,24 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import it.schiavi.fabrizio.uhelp.utils.Conf;
+
 public class MainActivity extends AppCompatActivity implements LocationListener {
 
     private TextView mTextMessage;
     private double lat;
     private double lon;
+
+    private FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -31,14 +36,18 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
+                    ft.replace(R.id.container, new HomeFragment());
+                    ft.commit();
                     return true;
+
                 case R.id.navigation_help:
                     mTextMessage.setText(R.string.title_help);
                     return true;
+
                 case R.id.navigation_contacts:
                     mTextMessage.setText(R.string.title_contatti);
                     return true;
+
                 case R.id.navigation_profile:
                     mTextMessage.setText(R.string.title_profilo);
                     return true;
