@@ -16,7 +16,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        TextView textView2 = (TextView) findViewById(R.id.textView2);
+        TextView textView2 = (TextView) findViewById(R.id.textIscriviti);
         textView2.setOnClickListener(new View.OnClickListener(){
 
         @Override
@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
         }
     });
 
-        Button button2 = (Button) findViewById(R.id.button2);
+        Button button2 = (Button) findViewById(R.id.btnAccedi);
         button2.setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -36,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        TextView textView3 = (TextView) findViewById(R.id.textView3);
+        TextView textView3 = (TextView) findViewById(R.id.textScordata);
         textView3.setOnClickListener(new View.OnClickListener(){
 
             @Override
