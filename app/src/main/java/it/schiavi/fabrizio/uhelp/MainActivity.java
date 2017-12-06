@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         ft.replace(R.id.content, new HomeFragment());
         ft.commit();
 
-        mTextMessage = (TextView) findViewById(R.id.message);
+        //mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
